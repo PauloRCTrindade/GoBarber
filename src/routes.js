@@ -1,11 +1,7 @@
-const { Router} = require('express')
+const { Router } = require('express');
 
-const routes = new Router()
+const routes = new Router();
 
-routes.get('/',function(req,res) {
-  return res.json({ messae: 'Hello Word'})
-})
+routes.get('/', (req, res) => res.json({ messae: 'Hello Word' }));
 
-
-
-module.exports = routes
+module.exports = routes;
